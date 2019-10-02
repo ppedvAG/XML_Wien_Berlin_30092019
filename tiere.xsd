@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<xsd:schema
+
+
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:annotation>
+  <xsd:appinfo>Meine Tiere</xsd:appinfo>
+  <xsd:documentation xml:lang="en">
+  Hier ist definition meiner Tiere
+  </xsd:documentation>
+</xsd:annotation>
+
+
+  <xsd:element name="Bezeichnung"  type="xsd:string"/>
+
+  <xsd:element name="Geschlecht"  >
+    <xsd:annotation>
+      <xsd:documentation>
+        Das definiert das Geschlecht des Tieres
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base ="xsd:string">
+        <xsd:enumeration value ="Weiblich"/>
+        <xsd:enumeration value ="Männlich"/>
+        <xsd:enumeration value ="Divers"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+
+  <xsd:element name="Name" type="xsd:string"/>
+
+  <xsd:element name="Art">
+    <xsd:complexType>
+      <xsd:attribute use="required" name ="Gattung" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="AnzahlBeine" >
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:integer">
+        <xsd:maxExclusive value="1000"/>
+        <xsd:minExclusive value="1"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+
+  <!-- Element mit einfachen Wert und einem Attribute -->
+  <xsd:element name="Gewicht" >
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:decimal">
+          <xsd:attribute name="Einheit" type="units" />
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Vegetarier" type="xsd:boolean"/>
+
+  <xsd:element name="Geburtstag" type="xsd:date"/>
+
+  <xsd:element name="Tier">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Bezeichnung" />
+        <xsd:element ref="Name" />
+        <xsd:element ref="Geschlecht" />
+        <xsd:element ref="Art" />
+        <xsd:element ref="AnzahlBeine"/>
+        <xsd:element ref="Gewicht"/>
+        <xsd:element ref="Vegetarier"/>
+        <xsd:element ref="Geburtstag"/>
+        <xsd:element ref="RegNummer"/>
+        <xsd:element ref="Wohnort" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Wohnort" type="location" />
+
+  <xsd:element name="RegNummer">
+    <xsd:simpleType >
+      <xsd:restriction base="xsd:string">
+        <xsd:pattern value="[2][0][0-9][0-9]-[A-Z]{4}-[0-9]{5}-[A-Z]{2}"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+
+  <xsd:element name="Tiere" >
+    <xsd:complexType>
+      <xsd:sequence maxOccurs="unbounded">
+        <xsd:element ref="Tier" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+
+  <xsd:simpleType name="units">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="g"/>
+      <xsd:enumeration value="kg"/>
+      <xsd:enumeration value="t"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="location">
+    <xsd:sequence >
+      <xsd:element name="Zone" type="xsd:int" />
+      <xsd:element name="Bereich" type="xsd:string"/>
+      <xsd:element name="Gehege" type="xsd:byte"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+
+</xsd:schema>

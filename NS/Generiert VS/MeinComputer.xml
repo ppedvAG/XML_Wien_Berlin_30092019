@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MeinComputer xmlns="http://ppedv.de/xmlKurs/MeinComputer">
+
+  <Tools>
+    <Tool Name="Paint.NET"/>
+  </Tools>
+
+
+  <VisualStudio xmlns="http://ppedv.de/xmlKurs/VS2019">
+
+    <Theme>dark</Theme>
+
+    <Extentions>
+      <Extention Name="IntelliCode" MustHave="true"/>
+      <Extention Name="Viasfora" MustHave="false"/>
+    </Extentions>
+
+    <LiveShare url="https://prod.liveshare.vsengsaas.visualstudio.com/join?D5EB4F09704464E7F5FFADA08C797B33DAAC"/>
+
+  </VisualStudio>
+
+  <VisualStudio xmlns="http://ppedv.de/xmlKurs/VS2017">
+    
+    <Theme>blue</Theme>
+    
+    <Extentions>
+      <Extention Name="ClippyVS" MustHave="true"/>
+    </Extentions>
+    
+  </VisualStudio>
+
+
+</MeinComputer>

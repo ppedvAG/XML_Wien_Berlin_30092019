@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://purl.oclc.org/dsdl/schematron">
+  <pattern>
+    <rule context="/Tiere">
+      <report test="Tier[AnzahlBeine mod 2 != 0]">Ein Tier hab ungerade Beine</report>
+    </rule>
+  </pattern>
+</schema>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<DieWoche xmlns="http://ppedv.de/xmlKurs/Woche"
+
+		      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		      xsi:schemaLocation="http://ppedv.de/hier/steht/müll Woche.xsd
+          http://ppedv.de/hier/steht/müll Montag.xsd
+          http://ppedv.de/xmlKurs/Dienstag Dienstag.xsd">
+
+  <!-- Default-->
+  <mon:DerAbend xmlns:mon="http://ppedv.de/xmlKurs/Montag">
+    <mon:Bier Weizen="true" />
+    <mon:Schnaps Volt="39"/>
+    <mon:Wein Farbe="gelb"  />
+  </mon:DerAbend>
+
+  <!--Alles qualified-->
+  <DerAbend xmlns="http://ppedv.de/xmlKurs/Dienstag" xmlns:die="http://ppedv.de/xmlKurs/Dienstag">
+    <Sekt die:IstKalt="true"/>
+    <Sekt die:IstKalt="false"/>
+    <Sekt die:IstKalt="false"/>
+    <Sekt die:IstKalt="false"/>
+  </DerAbend>
+
+</DieWoche>

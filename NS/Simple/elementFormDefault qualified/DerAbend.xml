@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DerAbend xmlns="http://ppedv.de/xmlKurs/Montag">
+  <Bier Weizen="true"/>
+  <Schnaps Volt="40"/>
+  <Wein Farbe="rot"/>
+</DerAbend>

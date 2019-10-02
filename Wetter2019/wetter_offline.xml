@@ -1,0 +1,60 @@
+<rss xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" version="2.0">
+	<channel>
+		<yweather:units distance="mile" pressure="inch Hg" speed="m/h" temperature="F"/>
+		<title>Yahoo! Weather - Vienna, Vienna, AT</title>
+		<link>https://www.yahoo.com/news/weather/country/state/city-551801/</link>
+		<description>Yahoo! Weather for Vienna, Vienna, AT</description>
+		<language>en-us</language>
+		<lastBuildDate>Tue, 01 Oct 2019 04:38 PM CEST</lastBuildDate>
+		<ttl>60</ttl>
+		<yweather:location city="Vienna" country="Austria" region=" Vienna"/>
+		<yweather:wind chill="77" direction="165" speed="13.05"/>
+		<yweather:atmosphere humidity="40" pressure="28.97" rising="0" visibility="10.00"/>
+		<yweather:astronomy sunrise="6:54 am" sunset="6:33 pm"/>
+		<image>
+			<title>Yahoo! Weather</title>
+			<width>142</width>
+			<height>18</height>
+			<link>https://www.yahoo.com/news/weather/</link>
+			<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+		</image>
+		<item>
+			<title>Conditions for Vienna, Vienna, AT at 04:00 PM CEST</title>
+			<geo:lat>48.202541</geo:lat>
+			<geo:long>16.368799</geo:long>
+			<link>https://www.yahoo.com/news/weather/country/state/city-551801/</link>
+			<pubDate>Tue, 01 Oct 2019 04:00 PM CEST</pubDate>
+			<yweather:condition code="32" date="Tue, 01 Oct 2019 04:00 PM CEST" temp="77" text="Sunny"/>
+			<yweather:forecast code="32" date="01 Oct 2019" day="Tue" high="76" low="49" text="Sunny"/>
+			<yweather:forecast code="12" date="02 Oct 2019" day="Wed" high="63" low="54" text="Rain"/>
+			<yweather:forecast code="12" date="03 Oct 2019" day="Thu" high="56" low="47" text="Rain"/>
+			<yweather:forecast code="30" date="04 Oct 2019" day="Fri" high="60" low="46" text="Partly Cloudy"/>
+			<yweather:forecast code="39" date="05 Oct 2019" day="Sat" high="58" low="51" text="Scattered Showers"/>
+			<yweather:forecast code="30" date="06 Oct 2019" day="Sun" high="57" low="47" text="Partly Cloudy"/>
+			<yweather:forecast code="28" date="07 Oct 2019" day="Mon" high="57" low="45" text="Mostly Cloudy"/>
+			<yweather:forecast code="39" date="08 Oct 2019" day="Tue" high="59" low="47" text="Scattered Showers"/>
+			<yweather:forecast code="39" date="09 Oct 2019" day="Wed" high="63" low="49" text="Scattered Showers"/>
+			<yweather:forecast code="11" date="10 Oct 2019" day="Thu" high="59" low="49" text="Showers"/>
+			<description>&lt;![CDATA[&lt;img src="http://l.yimg.com/a/i/us/we/52/32.gif"/&gt;
+&lt;BR /&gt;
+&lt;b&gt;Current Conditions:&lt;/b&gt;
+&lt;BR /&gt;Sunny
+&lt;BR /&gt;
+&lt;BR /&gt;
+&lt;b&gt;Forecast:&lt;/b&gt;
+&lt;BR /&gt; Tue - Sunny. High: 76 Low: 49
+&lt;BR /&gt; Wed - Rain. High: 63 Low: 54
+&lt;BR /&gt; Thu - Rain. High: 56 Low: 47
+&lt;BR /&gt; Fri - Partly Cloudy. High: 60 Low: 46
+&lt;BR /&gt; Sat - Scattered Showers. High: 58 Low: 51
+&lt;BR /&gt;
+&lt;BR /&gt;
+&lt;a href="https://www.yahoo.com/news/weather/country/state/city-551801/"&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;
+&lt;BR /&gt;
+&lt;BR /&gt;
+&lt;BR /&gt;
+]]&gt;</description>
+			<guid isPermaLink="false"/>
+		</item>
+	</channel>
+</rss>

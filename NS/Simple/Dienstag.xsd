@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified"
+           targetNamespace="http://ppedv.de/xmlKurs/Dienstag" >
+
+  <xs:element name="DerAbend">
+    <xs:complexType>
+      <xs:sequence minOccurs ="4" maxOccurs="unbounded">
+
+        <xs:element name="Sekt">
+          <xs:complexType>
+            <xs:attribute name="IstKalt" type="xs:boolean" use="required" />
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

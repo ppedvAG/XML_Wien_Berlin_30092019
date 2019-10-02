@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xmlns:mon="http://ppedv.de/xmlKurs/Montag"
+           xmlns:die="http://ppedv.de/xmlKurs/Dienstag"
+           attributeFormDefault="qualified" elementFormDefault="qualified"
+           targetNamespace="http://ppedv.de/xmlKurs/Woche" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+  <xs:import namespace="http://ppedv.de/xmlKurs/Montag" />
+  <xs:import namespace="http://ppedv.de/xmlKurs/Dienstag" />
+  
+  <xs:element name="DieWoche">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mon:DerAbend"  />
+        <xs:element ref="die:DerAbend" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

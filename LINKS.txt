@@ -1,0 +1,31 @@
+xs3p - Erstellt HTML Dokus aus XML Schemas
+https://sourceforge.net/projects/xs3p/
+
+Apache FOP - Erstellt PDF Dateien aus XML Daten
+https://xmlgraphics.apache.org/fop/download.html
+
+Netter XML Editor 
+http://www.wmhelp.com
+
+Orginal Definition von XML Schema
+https://www.w3.org/TR/xmlschema-1/#schema-loc
+
+Vollständiger XML Prozesssor
+http://saxon.sourceforge.net
+
+Offener WebService
+http://www.thomas-bayer.com/axis2/services/BLZService?wsdl
+
+WCF Tutorial
+http://wcftutorial.net
+
+XSL FO Doku
+https://www.data2type.de/xml-xslt-xslfo/xsl-fo/xslfo-referenz/elemente/
+https://www.webucator.com/tutorial/learn-xsl-fo/Formatting-Objects-Basics.cfm
+
+Schematron
+https://github.com/Schematron/schematron
+https://www.data2type.de/xml-xslt-xslfo/schematron/
+
+REST APIs
+https://github.com/public-apis/public-apis

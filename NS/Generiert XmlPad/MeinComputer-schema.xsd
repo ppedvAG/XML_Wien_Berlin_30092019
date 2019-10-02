@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wmh="http://www.wmhelp.com/2003/eGenerator" elementFormDefault="qualified">
+  <xs:element name="MeinComputer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Tools"/>
+        <xs:element ref="VisualStudio" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="xmlns" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tools">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Tool"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tool">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VisualStudio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Theme"/>
+        <xs:element ref="Extentions"/>
+        <xs:element ref="LiveShare"/>
+      </xs:sequence>
+      <xs:attribute name="xmlns" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Theme" type="xs:string"/>
+  <xs:element name="Extentions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Extention" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Extention">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="MustHave" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LiveShare">
+    <xs:complexType>
+      <xs:attribute name="url" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

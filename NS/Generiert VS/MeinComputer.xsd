@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="http://ppedv.de/xmlKurs/MeinComputer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ 
+  <xs:import namespace="http://ppedv.de/xmlKurs/VS2019" schemaLocation="VS2019.xsd"/>
+  <xs:import namespace="http://ppedv.de/xmlKurs/VS2017" />
+ 
+  <xs:element name="MeinComputer">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element name="Tools">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tool">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element xmlns:q1="http://ppedv.de/xmlKurs/VS2019" ref="q1:VisualStudio" />
+        <xs:element xmlns:q2="http://ppedv.de/xmlKurs/VS2017" ref="q2:VisualStudio" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

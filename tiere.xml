@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="tiereToHTML.xslt"?>
+<Tiere xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="tiere.xsd"
+       >
+  <Tier>
+
+    <Bezeichnung >Affe</Bezeichnung>
+    <Name>Emil</Name>
+    <Geschlecht>Weiblich</Geschlecht>
+    <Art Gattung="Säugetier"/>
+    <AnzahlBeine>900</AnzahlBeine>
+    <Gewicht Einheit="kg">42.6</Gewicht>
+    <Vegetarier>false</Vegetarier>
+    <Geburtstag>2013-04-17</Geburtstag>
+    <RegNummer>2019-ASBD-00012-GG</RegNummer>
+    <Wohnort>
+      <Zone>1</Zone>
+      <Bereich>Grün</Bereich>
+      <Gehege>3</Gehege>
+    </Wohnort>
+  </Tier>
+  <Tier>
+    <Bezeichnung>Zebra</Bezeichnung>
+    <Name>Bärbel</Name>
+    <Geschlecht>Divers</Geschlecht>
+    <Art Gattung="Säugetier"></Art>
+    <AnzahlBeine>4</AnzahlBeine>
+    <Gewicht Einheit="kg">390</Gewicht>
+    <Vegetarier>true</Vegetarier>
+    <Geburtstag>1996-02-05</Geburtstag>
+    <RegNummer>2019-ASBD-00012-GG</RegNummer>
+    <Wohnort>
+      <Zone>4</Zone>
+      <Bereich>Gelb</Bereich>
+      <Gehege>29</Gehege>
+    </Wohnort>
+  </Tier>
+  <Tier>
+    <Bezeichnung>Löwe</Bezeichnung>
+    <Name>Bernd</Name>
+    <Geschlecht>Männlich</Geschlecht>
+    <Art Gattung="Säugetier"/>
+    <AnzahlBeine>4</AnzahlBeine>
+    <Gewicht Einheit="kg">195</Gewicht>
+    <Vegetarier>false</Vegetarier>
+    <Geburtstag>1999-08-22</Geburtstag>
+    <RegNummer>2019-ASBD-00012-GG</RegNummer>
+    <Wohnort>
+      <Zone>1</Zone>
+      <Bereich>Rot</Bereich>
+      <Gehege>2</Gehege>
+    </Wohnort>
+  </Tier>
+  <Tier>
+    <Bezeichnung>Rabe</Bezeichnung>
+    <Name>Rudi</Name>
+    <Geschlecht>Männlich</Geschlecht>
+    <Art Gattung="Vogel"/>
+    <AnzahlBeine>2</AnzahlBeine>
+    <Gewicht Einheit="g">1254</Gewicht>
+    <Vegetarier>false</Vegetarier>
+    <Geburtstag>2015-03-29</Geburtstag>
+    <RegNummer>2019-ASBD-00012-GG</RegNummer>
+    <Wohnort>
+      <Zone>6</Zone>
+      <Bereich>Blau</Bereich>
+      <Gehege>25</Gehege>
+    </Wohnort>
+  </Tier>
+</Tiere>

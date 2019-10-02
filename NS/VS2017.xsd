@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ppedv.de/xmlKurs/VS2017" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ppedv.de/xmlKurs/VS2017" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="VisualStudio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Theme" type="xs:string" />
+        <xs:element name="Extentions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Extention">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                  <xs:attribute name="MustHave" type="xs:boolean" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

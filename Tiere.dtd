@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Tiere (Tier+)>
+<!ELEMENT Tier (Bezeichnung, Name,Geschlecht, Art,AnzahlBeine, Gewicht, Vegetarier, Geburtstag)>
+<!ELEMENT Bezeichnung (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Art (#PCDATA)>
+<!ELEMENT Geschlecht (#PCDATA)>
+<!ELEMENT AnzahlBeine (#PCDATA)>
+<!ELEMENT Gewicht (#PCDATA)>
+<!ATTLIST Gewicht Einheit CDATA #REQUIRED>
+<!ELEMENT Vegetarier (#PCDATA)>
+<!ELEMENT Geburtstag (#PCDATA)>
